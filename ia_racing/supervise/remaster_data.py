@@ -40,7 +40,7 @@ import numpy as np # La base
 
 ############### PARAMETRES ###############
 
-TUBS_MASTER = '/Users/IMT_Atlantique/project_ia/data_all'
+TUBS_MASTER = '/home/ia-racing/ia_racing/data_all'
 CROP = 40
 PREPRO = ['lines', 'bnw'] # Prepro existant : lines|bnw
 TARGET_DIR = os.path.join(os.getcwd(), "test_tub")
@@ -257,7 +257,9 @@ if __name__ == "__main__":
     args = argParser.parse_args()
 
     tubs_main_dir = TUBS_MASTER if args.from_dir is None else args.from_dir
-    cropPx = CROP if args.crop is None else args.crop
+    #cropPx = CROP if args.crop is None else args.crop
+    cropPx = CROP if args.crop is None else int(args.crop)  # Convertir en entier
+
     prepros = PREPRO if args.preprocessing is None else args.preprocessing
     target_tub = TARGET_DIR if args.target is None else args.target
 
