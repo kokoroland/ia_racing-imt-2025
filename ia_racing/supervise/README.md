@@ -58,11 +58,11 @@ Par exemple, pour fusionner plusieurs tubs enregistrés dans le répertoire ```t
 python remaster_data.py -f ./tubs_to_merge -c 40 -p bnw lines -t tub_master
 ```
 
-### Création du modèle d'entrainé 
+### Création du modèle d'entrainément
 
 Dans un premier temps, nous avons utiliser le model de reuseau interne de Donkey car( Boite noir) pour nous famialiser avant de commencer à creer notre prore modele de reseau de neurone
 
-### Lancer un entraînement
+### Lancer un entraînement du model
 
 > __Note__ : pour cette partie, il est vivement recommandé d'avoir un bon ordinateur car cela prend enormement du temps 
 l'ideal c'est d'avoir un ordinateur qui a une carte graphique avec CUDA installé. Pour installer CUDA( à faire ulterieurement) 
